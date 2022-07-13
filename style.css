@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    height: 300px;
+    display: flex;
+    /* flex-direction: column; */
+
+    /* justify content always on the main axis */
+ 
+
+    /* align items always on the cross axis */
+
+    /* align-items: flex-end;
+   */
+
+    
+
+    background-color: black;
+}
+
+/* .flex-container::after{
+    content: '';
+    clear: both;
+    display: block;
+
+} */
+
+
+
+
+.items{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: aliceblue;
+    margin: 10px;
+    /* float: left;     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items:nth-of-type(1){
+    order: 1;
+}
+
+.items:nth-of-type(2){
+    flex-basis: 20px;
+}
+
+.items:nth-of-type(3){
+    flex-grow: 3;
+    flex-shrink: 1;
+}
+
+/*flex-grow = wadiwena anupathaya
+   flex-shrink = podi wena anupathaya
+*/
